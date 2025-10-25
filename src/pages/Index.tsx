@@ -110,6 +110,16 @@ const Index = () => {
         <div className="absolute inset-0 bg-gradient-to-br from-primary/20 via-secondary/20 to-accent/20 animate-fade-in" />
         <div className="absolute inset-0 bg-[radial-gradient(circle_at_50%_50%,rgba(139,92,246,0.1),transparent_50%)]" />
         
+        <div className="absolute top-20 -left-20 w-96 h-96 opacity-5 animate-fade-in">
+          <img src="https://cdn.poehali.dev/projects/93c9751f-a690-4b36-86a7-2a14a0999ac6/files/f4dae364-8ff1-48f1-a247-9ef552f11c46.jpg" alt="" className="w-full h-full object-contain" />
+        </div>
+        <div className="absolute bottom-32 -right-32 w-[500px] h-96 opacity-5 animate-fade-in" style={{ animationDelay: '0.3s' }}>
+          <img src="https://cdn.poehali.dev/projects/93c9751f-a690-4b36-86a7-2a14a0999ac6/files/f9321ebe-daec-498f-91fc-9f2d05684536.jpg" alt="" className="w-full h-full object-contain" />
+        </div>
+        <div className="absolute top-1/3 right-1/4 w-80 h-80 opacity-5 animate-fade-in" style={{ animationDelay: '0.6s' }}>
+          <img src="https://cdn.poehali.dev/projects/93c9751f-a690-4b36-86a7-2a14a0999ac6/files/f4dae364-8ff1-48f1-a247-9ef552f11c46.jpg" alt="" className="w-full h-full object-contain rotate-12" />
+        </div>
+        
         <div className="container mx-auto px-4 relative z-10">
           <div className="max-w-4xl mx-auto text-center animate-slide-up">
             <h1 className="text-6xl md:text-8xl font-bold mb-6 bg-gradient-to-r from-primary via-secondary to-accent bg-clip-text text-transparent">
