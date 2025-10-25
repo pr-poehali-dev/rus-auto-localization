@@ -110,36 +110,36 @@ const Index = () => {
         <div className="absolute inset-0 bg-gradient-to-br from-primary/20 via-secondary/20 to-accent/20 animate-fade-in" />
         <div className="absolute inset-0 bg-[radial-gradient(circle_at_50%_50%,rgba(139,92,246,0.1),transparent_50%)]" />
         
-        <div className="absolute top-20 -left-20 w-96 h-96 opacity-5 animate-float">
+        <div className="hidden md:block absolute top-20 -left-20 w-96 h-96 opacity-5 animate-float">
           <img src="https://cdn.poehali.dev/projects/93c9751f-a690-4b36-86a7-2a14a0999ac6/files/f4dae364-8ff1-48f1-a247-9ef552f11c46.jpg" alt="" className="w-full h-full object-contain" />
         </div>
-        <div className="absolute bottom-32 -right-32 w-[500px] h-96 opacity-5 animate-float" style={{ animationDelay: '5s' }}>
+        <div className="hidden md:block absolute bottom-32 -right-32 w-[500px] h-96 opacity-5 animate-float" style={{ animationDelay: '5s' }}>
           <img src="https://cdn.poehali.dev/projects/93c9751f-a690-4b36-86a7-2a14a0999ac6/files/f9321ebe-daec-498f-91fc-9f2d05684536.jpg" alt="" className="w-full h-full object-contain" />
         </div>
-        <div className="absolute top-1/3 right-1/4 w-80 h-80 opacity-5 animate-float-reverse">
+        <div className="hidden lg:block absolute top-1/3 right-1/4 w-80 h-80 opacity-5 animate-float-reverse">
           <img src="https://cdn.poehali.dev/projects/93c9751f-a690-4b36-86a7-2a14a0999ac6/files/f4dae364-8ff1-48f1-a247-9ef552f11c46.jpg" alt="" className="w-full h-full object-contain rotate-12" />
         </div>
-        <div className="absolute top-1/4 left-1/3 w-72 h-72 opacity-5 animate-float" style={{ animationDelay: '7s' }}>
+        <div className="hidden lg:block absolute top-1/4 left-1/3 w-72 h-72 opacity-5 animate-float" style={{ animationDelay: '7s' }}>
           <img src="https://cdn.poehali.dev/projects/93c9751f-a690-4b36-86a7-2a14a0999ac6/files/adf742fa-37a7-42dc-94dd-ce73f96cecfd.jpg" alt="" className="w-full h-full object-contain -rotate-6" />
         </div>
-        <div className="absolute bottom-1/4 left-10 w-64 h-64 opacity-5 animate-float-reverse" style={{ animationDelay: '3s' }}>
+        <div className="hidden md:block absolute bottom-1/4 left-10 w-64 h-64 opacity-5 animate-float-reverse" style={{ animationDelay: '3s' }}>
           <img src="https://cdn.poehali.dev/projects/93c9751f-a690-4b36-86a7-2a14a0999ac6/files/08b43e6e-6343-448b-af1a-326a0765c969.jpg" alt="" className="w-full h-full object-contain" />
         </div>
         
         <div className="container mx-auto px-4 relative z-10">
           <div className="max-w-4xl mx-auto text-center animate-slide-up">
-            <h1 className="text-6xl md:text-8xl font-bold mb-6 bg-gradient-to-r from-primary via-secondary to-accent bg-clip-text text-transparent">
+            <h1 className="text-4xl sm:text-5xl md:text-7xl lg:text-8xl font-bold mb-6 bg-gradient-to-r from-primary via-secondary to-accent bg-clip-text text-transparent leading-tight">
               Русификация китайских автомобилей
             </h1>
-            <p className="text-xl md:text-2xl text-muted-foreground mb-8">
+            <p className="text-lg sm:text-xl md:text-2xl text-muted-foreground mb-8 px-4">
               Профессиональная настройка мультимедиа систем. Быстро, качественно, с гарантией.
             </p>
-            <div className="flex gap-4 justify-center flex-wrap">
-              <Button size="lg" className="bg-gradient-purple hover:opacity-90 text-lg px-8" onClick={() => document.getElementById('contacts')?.scrollIntoView({ behavior: 'smooth' })}>
+            <div className="flex gap-3 sm:gap-4 justify-center flex-wrap px-4">
+              <Button size="lg" className="bg-gradient-purple hover:opacity-90 text-base sm:text-lg px-6 sm:px-8" onClick={() => document.getElementById('contacts')?.scrollIntoView({ behavior: 'smooth' })}>
                 <Icon name="Phone" className="mr-2" size={20} />
                 Записаться
               </Button>
-              <Button size="lg" variant="outline" className="text-lg px-8 border-2" onClick={() => document.getElementById('services')?.scrollIntoView({ behavior: 'smooth' })}>
+              <Button size="lg" variant="outline" className="text-base sm:text-lg px-6 sm:px-8 border-2" onClick={() => document.getElementById('services')?.scrollIntoView({ behavior: 'smooth' })}>
                 <Icon name="Info" className="mr-2" size={20} />
                 Узнать больше
               </Button>
@@ -148,10 +148,10 @@ const Index = () => {
         </div>
       </section>
 
-      <section id="services" className="py-24 px-4">
+      <section id="services" className="py-16 sm:py-20 md:py-24 px-4">
         <div className="container mx-auto">
-          <h2 className="text-5xl font-bold text-center mb-4 animate-fade-in">Наши услуги</h2>
-          <p className="text-center text-muted-foreground mb-16 text-lg">Полный спектр работ по русификации</p>
+          <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold text-center mb-3 sm:mb-4 animate-fade-in">Наши услуги</h2>
+          <p className="text-center text-muted-foreground mb-12 sm:mb-16 text-base sm:text-lg">Полный спектр работ по русификации</p>
           
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
             {services.map((service, index) => (
@@ -169,10 +169,10 @@ const Index = () => {
         </div>
       </section>
 
-      <section id="pricing" className="py-24 px-4 bg-muted/30">
+      <section id="pricing" className="py-16 sm:py-20 md:py-24 px-4 bg-muted/30">
         <div className="container mx-auto">
-          <h2 className="text-5xl font-bold text-center mb-4">Прайс-лист</h2>
-          <p className="text-center text-muted-foreground mb-16 text-lg">Прозрачные цены без скрытых платежей</p>
+          <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold text-center mb-3 sm:mb-4">Прайс-лист</h2>
+          <p className="text-center text-muted-foreground mb-12 sm:mb-16 text-base sm:text-lg">Прозрачные цены без скрытых платежей</p>
           
           <div className="grid md:grid-cols-3 gap-8 max-w-6xl mx-auto">
             {pricing.map((plan, index) => (
@@ -211,10 +211,10 @@ const Index = () => {
         </div>
       </section>
 
-      <section id="portfolio" className="py-24 px-4">
+      <section id="portfolio" className="py-16 sm:py-20 md:py-24 px-4">
         <div className="container mx-auto">
-          <h2 className="text-5xl font-bold text-center mb-4">Портфолио</h2>
-          <p className="text-center text-muted-foreground mb-16 text-lg">Примеры наших работ</p>
+          <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold text-center mb-3 sm:mb-4">Портфолио</h2>
+          <p className="text-center text-muted-foreground mb-12 sm:mb-16 text-base sm:text-lg">Примеры наших работ</p>
           
           <div className="grid md:grid-cols-3 gap-8 max-w-6xl mx-auto">
             {portfolio.map((item, index) => (
@@ -237,10 +237,10 @@ const Index = () => {
         </div>
       </section>
 
-      <section id="faq" className="py-24 px-4 bg-muted/30">
+      <section id="faq" className="py-16 sm:py-20 md:py-24 px-4 bg-muted/30">
         <div className="container mx-auto max-w-4xl">
-          <h2 className="text-5xl font-bold text-center mb-4">Вопросы и ответы</h2>
-          <p className="text-center text-muted-foreground mb-16 text-lg">Ответы на частые вопросы</p>
+          <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold text-center mb-3 sm:mb-4">Вопросы и ответы</h2>
+          <p className="text-center text-muted-foreground mb-12 sm:mb-16 text-base sm:text-lg">Ответы на частые вопросы</p>
           
           <Accordion type="single" collapsible className="space-y-4">
             {faqs.map((faq, index) => (
@@ -257,15 +257,15 @@ const Index = () => {
         </div>
       </section>
 
-      <section id="contacts" className="py-24 px-4">
+      <section id="contacts" className="py-16 sm:py-20 md:py-24 px-4">
         <div className="container mx-auto max-w-2xl">
-          <h2 className="text-5xl font-bold text-center mb-4">Контакты</h2>
-          <p className="text-center text-muted-foreground mb-16 text-lg">Свяжитесь с нами удобным способом</p>
+          <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold text-center mb-3 sm:mb-4">Контакты</h2>
+          <p className="text-center text-muted-foreground mb-12 sm:mb-16 text-base sm:text-lg">Свяжитесь с нами удобным способом</p>
           
           <Card className="border-2">
             <CardHeader>
-              <CardTitle className="text-2xl">Оставьте заявку</CardTitle>
-              <CardDescription className="text-base">Мы перезвоним в течение 15 минут</CardDescription>
+              <CardTitle className="text-xl sm:text-2xl">Оставьте заявку</CardTitle>
+              <CardDescription className="text-sm sm:text-base">Мы перезвоним в течение 15 минут</CardDescription>
             </CardHeader>
             <CardContent>
               <form onSubmit={handleSubmit} className="space-y-6">
@@ -302,17 +302,17 @@ const Index = () => {
                 </Button>
               </form>
 
-              <div className="mt-8 pt-8 border-t space-y-4">
-                <div className="flex items-center gap-3 text-lg">
-                  <Icon name="Phone" className="text-primary" size={24} />
-                  <a href="tel:+79991234567" className="hover:text-primary transition-colors">+7 (999) 123-45-67</a>
+              <div className="mt-6 sm:mt-8 pt-6 sm:pt-8 border-t space-y-3 sm:space-y-4">
+                <div className="flex items-center gap-3 text-base sm:text-lg">
+                  <Icon name="Phone" className="text-primary shrink-0" size={20} />
+                  <a href="tel:+79991234567" className="hover:text-primary transition-colors break-all">+7 (999) 123-45-67</a>
                 </div>
-                <div className="flex items-center gap-3 text-lg">
-                  <Icon name="Mail" className="text-primary" size={24} />
-                  <a href="mailto:info@rusauto.ru" className="hover:text-primary transition-colors">info@rusauto.ru</a>
+                <div className="flex items-center gap-3 text-base sm:text-lg">
+                  <Icon name="Mail" className="text-primary shrink-0" size={20} />
+                  <a href="mailto:info@rusauto.ru" className="hover:text-primary transition-colors break-all">info@rusauto.ru</a>
                 </div>
-                <div className="flex items-center gap-3 text-lg">
-                  <Icon name="MapPin" className="text-primary" size={24} />
+                <div className="flex items-center gap-3 text-base sm:text-lg">
+                  <Icon name="MapPin" className="text-primary shrink-0" size={20} />
                   <span>Москва, ул. Примерная, д. 123</span>
                 </div>
               </div>
@@ -321,9 +321,9 @@ const Index = () => {
         </div>
       </section>
 
-      <footer className="py-12 px-4 bg-muted/50 border-t">
+      <footer className="py-8 sm:py-12 px-4 bg-muted/50 border-t">
         <div className="container mx-auto text-center">
-          <p className="text-muted-foreground">© 2024 Русификация китайских авто. Все права защищены.</p>
+          <p className="text-sm sm:text-base text-muted-foreground">© 2024 Русификация китайских авто. Все права защищены.</p>
         </div>
       </footer>
     </div>
