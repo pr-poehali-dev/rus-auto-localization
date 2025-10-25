@@ -69,10 +69,11 @@ export default {
 				sm: 'calc(var(--radius) - 4px)'
 			},
 			backgroundImage: {
-				'gradient-red': 'linear-gradient(135deg, #DC2626 0%, #EF4444 100%)',
-				'gradient-gold': 'linear-gradient(135deg, #F59E0B 0%, #FBBF24 100%)',
-				'gradient-ink': 'linear-gradient(135deg, #1F2937 0%, #374151 100%)',
-				'chinese-pattern': 'url("data:image/svg+xml,%3Csvg width=\'60\' height=\'60\' viewBox=\'0 0 60 60\' xmlns=\'http://www.w3.org/2000/svg\'%3E%3Cg fill=\'none\' fill-rule=\'evenodd\'%3E%3Cg fill=\'%23DC2626\' fill-opacity=\'0.05\'%3E%3Cpath d=\'M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z\'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E")'
+				'gradient-purple': 'linear-gradient(135deg, #A855F7 0%, #EC4899 100%)',
+				'gradient-pink': 'linear-gradient(135deg, #EC4899 0%, #F472B6 100%)',
+				'gradient-yellow': 'linear-gradient(135deg, #FBBF24 0%, #FCD34D 100%)',
+				'halftone': 'radial-gradient(circle, #000 1px, transparent 1px)',
+				'comic-dots': 'url("data:image/svg+xml,%3Csvg width=\'20\' height=\'20\' viewBox=\'0 0 20 20\' xmlns=\'http://www.w3.org/2000/svg\'%3E%3Cg fill=\'%23A855F7\' fill-opacity=\'0.1\'%3E%3Ccircle cx=\'3\' cy=\'3\' r=\'2\'/%3E%3Ccircle cx=\'13\' cy=\'13\' r=\'2\'/%3E%3C/g%3E%3C/svg%3E")'
 			},
 			keyframes: {
 				'accordion-down': {

@@ -12,53 +12,56 @@ const Index = () => {
   const services = [
     {
       icon: 'Languages',
-      title: '完全俄语化',
-      subtitle: 'Полная русификация',
-      description: 'Перевод всех меню, настроек и интерфейсов на русский язык'
+      title: 'ПОЛНАЯ РУСИФИКАЦИЯ',
+      description: 'Перевод всех меню, настроек и интерфейсов на русский язык',
+      color: 'bg-purple-500'
     },
     {
       icon: 'Radio',
-      title: '多媒体系统',
-      subtitle: 'Мультимедиа система',
-      description: 'Настройка навигации, радио и мультимедийных функций'
+      title: 'МУЛЬТИМЕДИА',
+      description: 'Настройка навигации, радио и мультимедийных функций',
+      color: 'bg-pink-500'
     },
     {
       icon: 'Gauge',
-      title: '仪表板',
-      subtitle: 'Приборная панель',
-      description: 'Русификация цифровой приборной панели и бортового компьютера'
+      title: 'ПРИБОРНАЯ ПАНЕЛЬ',
+      description: 'Русификация цифровой приборной панели и бортового компьютера',
+      color: 'bg-yellow-500'
     },
     {
       icon: 'Smartphone',
-      title: '移动应用',
-      subtitle: 'Мобильные приложения',
-      description: 'Подключение российских аналогов CarPlay и Android Auto'
+      title: 'ПРИЛОЖЕНИЯ',
+      description: 'Подключение российских аналогов CarPlay и Android Auto',
+      color: 'bg-purple-500'
     }
   ];
 
   const pricing = [
     {
-      name: 'Базовая',
+      name: 'БАЗОВАЯ',
       price: '15 000',
-      features: ['Русификация меню', 'Настройка времени и даты', 'Базовая диагностика']
+      features: ['Русификация меню', 'Настройка времени и даты', 'Базовая диагностика'],
+      color: 'purple'
     },
     {
-      name: 'Стандарт',
+      name: 'СТАНДАРТ',
       price: '25 000',
       features: ['Полная русификация', 'Настройка мультимедиа', 'Обновление ПО', 'Гарантия 6 месяцев'],
-      popular: true
+      popular: true,
+      color: 'pink'
     },
     {
-      name: 'Премиум',
+      name: 'ПРЕМИУМ',
       price: '40 000',
-      features: ['Всё из Стандарт', 'Приборная панель', 'Голосовые команды', 'Гарантия 12 месяцев']
+      features: ['Всё из Стандарт', 'Приборная панель', 'Голосовые команды', 'Гарантия 12 месяцев'],
+      color: 'yellow'
     }
   ];
 
   const portfolio = [
     {
       brand: 'Chery Tiggo 8 Pro',
-      image: 'https://cdn.poehali.dev/projects/93c9751f-a690-4b36-86a7-2a14a0999ac6/files/ba32e24a-dba0-4c4e-aa86-daae080fb5f0.jpg',
+      image: 'https://cdn.poehali.dev/projects/93c9751f-a690-4b36-86a7-2a14a0999ac6/files/851771a3-44c9-4bb3-8521-8bc7c7127be1.jpg',
       description: 'Полная русификация мультимедиа и приборной панели'
     },
     {
@@ -102,72 +105,75 @@ const Index = () => {
   };
 
   return (
-    <div className="min-h-screen bg-background text-foreground bg-chinese-pattern">
-      <section id="hero" className="relative min-h-screen flex items-center justify-center overflow-hidden">
-        <div className="absolute inset-0 bg-[url('https://cdn.poehali.dev/projects/93c9751f-a690-4b36-86a7-2a14a0999ac6/files/565246a8-b0c6-490e-b358-3f8b40f1e9a8.jpg')] bg-cover bg-center opacity-20" />
-        <div className="absolute inset-0 bg-gradient-to-b from-background/80 via-background/60 to-background" />
+    <div className="min-h-screen bg-white text-black">
+      <section id="hero" className="relative min-h-screen flex items-center justify-center overflow-hidden bg-comic-dots">
+        <div className="absolute inset-0 bg-[url('https://cdn.poehali.dev/projects/93c9751f-a690-4b36-86a7-2a14a0999ac6/files/3eb6fbf2-7992-46a5-9be1-05ed8896d253.jpg')] bg-cover bg-center opacity-20" />
+        <div className="absolute inset-0 bg-gradient-to-b from-white/90 via-white/70 to-white" />
         
-        <div className="absolute top-10 left-10 w-32 h-32 opacity-30 animate-float">
-          <img src="https://cdn.poehali.dev/projects/93c9751f-a690-4b36-86a7-2a14a0999ac6/files/aae0bae0-4f47-4eed-bdd8-0b82e219dda2.jpg" alt="" className="w-full h-full object-contain" />
-        </div>
-        <div className="absolute bottom-20 right-10 w-40 h-40 opacity-30 animate-float-reverse">
-          <img src="https://cdn.poehali.dev/projects/93c9751f-a690-4b36-86a7-2a14a0999ac6/files/aae0bae0-4f47-4eed-bdd8-0b82e219dda2.jpg" alt="" className="w-full h-full object-contain" />
+        <div className="absolute top-10 right-10 w-48 h-48 animate-float">
+          <img src="https://cdn.poehali.dev/projects/93c9751f-a690-4b36-86a7-2a14a0999ac6/files/f9006931-425d-463b-8b1e-8f3f78d8310b.jpg" alt="" className="w-full h-full object-contain" />
         </div>
         
         <div className="container mx-auto px-4 relative z-10">
-          <div className="max-w-4xl mx-auto text-center animate-slide-up">
-            <div className="inline-block mb-6 px-8 py-3 bg-primary/10 border-2 border-primary rounded-full">
-              <p className="text-primary font-semibold text-lg">中俄汽车服务 · Китайские авто</p>
+          <div className="max-w-5xl mx-auto text-center animate-slide-up">
+            <div className="inline-block mb-6 px-8 py-4 bg-yellow-400 border-4 border-black transform -rotate-2 shadow-[8px_8px_0px_0px_rgba(0,0,0,1)]">
+              <p className="text-black font-bold text-xl">⚡ КИТАЙСКИЕ АВТО ⚡</p>
             </div>
             
-            <h1 className="text-4xl sm:text-5xl md:text-7xl lg:text-8xl font-bold mb-6 text-foreground leading-tight">
-              <span className="block text-primary">俄语化服务</span>
-              <span className="block mt-2">Русификация автомобилей</span>
+            <h1 className="text-5xl sm:text-6xl md:text-8xl lg:text-9xl font-bold mb-8 leading-none">
+              <span className="block text-purple-600 [text-shadow:4px_4px_0px_#000,_8px_8px_0px_#EC4899]">РУСИФИКАЦИЯ</span>
+              <span className="block mt-4 text-pink-500 [text-shadow:4px_4px_0px_#000]">АВТОМОБИЛЕЙ!</span>
             </h1>
             
-            <p className="text-lg sm:text-xl md:text-2xl text-muted-foreground mb-8 px-4">
-              Профессиональная настройка мультимедиа систем<br className="hidden sm:block" />
-              Быстро · 质量保证 · С гарантией
-            </p>
+            <div className="bg-white border-4 border-black p-6 max-w-2xl mx-auto mb-8 shadow-[8px_8px_0px_0px_rgba(0,0,0,1)]">
+              <p className="text-xl md:text-2xl font-semibold uppercase">
+                Профессиональная настройка мультимедиа систем
+                <br />
+                <span className="text-purple-600">БЫСТРО • КАЧЕСТВЕННО • С ГАРАНТИЕЙ</span>
+              </p>
+            </div>
             
-            <div className="flex gap-3 sm:gap-4 justify-center flex-wrap px-4">
-              <Button size="lg" className="bg-primary hover:bg-primary/90 text-lg px-8 shadow-lg" onClick={() => document.getElementById('contacts')?.scrollIntoView({ behavior: 'smooth' })}>
-                <Icon name="Phone" className="mr-2" size={20} />
-                Записаться
+            <div className="flex gap-4 justify-center flex-wrap">
+              <Button 
+                size="lg" 
+                className="bg-purple-600 hover:bg-purple-700 text-white text-xl px-10 py-7 border-4 border-black shadow-[6px_6px_0px_0px_rgba(0,0,0,1)] hover:shadow-[8px_8px_0px_0px_rgba(0,0,0,1)] hover:translate-x-[-2px] hover:translate-y-[-2px] transition-all uppercase font-bold"
+                onClick={() => document.getElementById('contacts')?.scrollIntoView({ behavior: 'smooth' })}
+              >
+                <Icon name="Phone" className="mr-2" size={24} />
+                ЗАПИСАТЬСЯ!
               </Button>
-              <Button size="lg" variant="outline" className="text-lg px-8 border-2 border-primary text-primary hover:bg-primary/10" onClick={() => document.getElementById('services')?.scrollIntoView({ behavior: 'smooth' })}>
-                <Icon name="Info" className="mr-2" size={20} />
-                Услуги
+              <Button 
+                size="lg" 
+                variant="outline" 
+                className="bg-white text-black text-xl px-10 py-7 border-4 border-black shadow-[6px_6px_0px_0px_rgba(0,0,0,1)] hover:shadow-[8px_8px_0px_0px_rgba(0,0,0,1)] hover:translate-x-[-2px] hover:translate-y-[-2px] transition-all uppercase font-bold"
+                onClick={() => document.getElementById('services')?.scrollIntoView({ behavior: 'smooth' })}
+              >
+                <Icon name="Zap" className="mr-2" size={24} />
+                УЗНАТЬ БОЛЬШЕ
               </Button>
             </div>
           </div>
         </div>
-        
-        <div className="absolute bottom-0 left-0 right-0 h-24 bg-gradient-to-t from-background to-transparent" />
       </section>
 
-      <section id="services" className="py-16 sm:py-20 md:py-24 px-4 relative">
-        <div className="absolute inset-0 bg-[radial-gradient(circle_at_30%_50%,rgba(220,38,38,0.05),transparent_50%)]" />
-        
+      <section id="services" className="py-16 sm:py-20 md:py-24 px-4 relative bg-gradient-to-b from-white to-purple-50">
         <div className="container mx-auto relative z-10">
-          <div className="text-center mb-12 sm:mb-16">
-            <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold mb-3 sm:mb-4">
-              <span className="text-primary">服务项目</span> · Наши услуги
-            </h2>
-            <div className="w-24 h-1 bg-primary mx-auto mb-4" />
-            <p className="text-muted-foreground text-base sm:text-lg">Полный спектр работ по русификации</p>
+          <div className="text-center mb-16">
+            <div className="inline-block bg-yellow-400 border-4 border-black px-8 py-3 mb-4 transform rotate-1 shadow-[6px_6px_0px_0px_rgba(0,0,0,1)]">
+              <h2 className="text-4xl sm:text-5xl md:text-6xl font-bold">НАШИ УСЛУГИ!</h2>
+            </div>
+            <p className="text-xl font-semibold mt-4 uppercase">⚡ Полный спектр работ по русификации ⚡</p>
           </div>
           
-          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
             {services.map((service, index) => (
-              <Card key={index} className="group hover:shadow-xl transition-all duration-300 border-2 hover:border-primary bg-card/80 backdrop-blur animate-scale-in" style={{ animationDelay: `${index * 100}ms` }}>
+              <Card key={index} className="group hover:scale-105 transition-all duration-300 border-4 border-black bg-white shadow-[8px_8px_0px_0px_rgba(0,0,0,1)] hover:shadow-[12px_12px_0px_0px_rgba(0,0,0,1)] animate-scale-in" style={{ animationDelay: `${index * 100}ms` }}>
                 <CardHeader>
-                  <div className="w-16 h-16 rounded-full bg-primary/10 flex items-center justify-center mb-4 group-hover:bg-primary/20 transition-all border-2 border-primary/20">
-                    <Icon name={service.icon} size={32} className="text-primary" />
+                  <div className={`w-20 h-20 ${service.color} border-4 border-black flex items-center justify-center mb-4 shadow-[4px_4px_0px_0px_rgba(0,0,0,1)]`}>
+                    <Icon name={service.icon} size={40} className="text-white" />
                   </div>
-                  <CardTitle className="text-xl text-primary mb-1">{service.title}</CardTitle>
-                  <CardTitle className="text-lg text-foreground mb-2">{service.subtitle}</CardTitle>
-                  <CardDescription className="text-base">{service.description}</CardDescription>
+                  <CardTitle className="text-2xl mb-3">{service.title}</CardTitle>
+                  <CardDescription className="text-base font-medium text-black">{service.description}</CardDescription>
                 </CardHeader>
               </Card>
             ))}
@@ -175,47 +181,46 @@ const Index = () => {
         </div>
       </section>
 
-      <section id="pricing" className="py-16 sm:py-20 md:py-24 px-4 bg-muted/30 relative">
-        <div className="absolute top-10 right-10 w-32 h-32 opacity-10">
-          <img src="https://cdn.poehali.dev/projects/93c9751f-a690-4b36-86a7-2a14a0999ac6/files/aae0bae0-4f47-4eed-bdd8-0b82e219dda2.jpg" alt="" className="w-full h-full object-contain" />
-        </div>
+      <section id="pricing" className="py-16 sm:py-20 md:py-24 px-4 bg-pink-50 relative overflow-hidden">
+        <div className="absolute inset-0 bg-comic-dots opacity-30" />
         
         <div className="container mx-auto relative z-10">
-          <div className="text-center mb-12 sm:mb-16">
-            <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold mb-3 sm:mb-4">
-              <span className="text-primary">价格表</span> · Прайс-лист
-            </h2>
-            <div className="w-24 h-1 bg-primary mx-auto mb-4" />
-            <p className="text-muted-foreground text-base sm:text-lg">Прозрачные цены без скрытых платежей</p>
+          <div className="text-center mb-16">
+            <div className="inline-block bg-pink-500 border-4 border-black px-8 py-3 mb-4 transform -rotate-1 shadow-[6px_6px_0px_0px_rgba(0,0,0,1)]">
+              <h2 className="text-4xl sm:text-5xl md:text-6xl font-bold text-white">ПРАЙС-ЛИСТ!</h2>
+            </div>
+            <p className="text-xl font-semibold mt-4 uppercase">💰 Прозрачные цены без скрытых платежей 💰</p>
           </div>
           
           <div className="grid md:grid-cols-3 gap-8 max-w-6xl mx-auto">
             {pricing.map((plan, index) => (
-              <Card key={index} className={`relative hover:shadow-2xl transition-all duration-300 bg-card ${plan.popular ? 'border-4 border-primary scale-105' : 'border-2'}`}>
+              <Card key={index} className={`relative border-4 border-black bg-white shadow-[10px_10px_0px_0px_rgba(0,0,0,1)] hover:shadow-[14px_14px_0px_0px_rgba(0,0,0,1)] hover:scale-105 transition-all duration-300 ${plan.popular ? 'scale-110 ring-4 ring-yellow-400' : ''}`}>
                 {plan.popular && (
-                  <div className="absolute -top-4 left-1/2 -translate-x-1/2">
-                    <span className="bg-primary text-white px-6 py-2 rounded-full text-sm font-semibold shadow-lg">
-                      热门选择 · Популярный
-                    </span>
+                  <div className="absolute -top-6 left-1/2 -translate-x-1/2 z-10">
+                    <div className="bg-yellow-400 border-4 border-black px-6 py-2 shadow-[4px_4px_0px_0px_rgba(0,0,0,1)] transform -rotate-3">
+                      <span className="text-black font-bold text-lg uppercase">★ ХИТ! ★</span>
+                    </div>
                   </div>
                 )}
-                <CardHeader className="text-center">
-                  <CardTitle className="text-2xl mb-2">{plan.name}</CardTitle>
-                  <div className="text-5xl font-bold my-4">
-                    <span className="text-primary">{plan.price} ₽</span>
+                <CardHeader className="text-center pt-8">
+                  <CardTitle className="text-3xl mb-4">{plan.name}</CardTitle>
+                  <div className="inline-block border-4 border-black bg-gradient-to-br from-purple-400 to-pink-400 px-6 py-4 shadow-[6px_6px_0px_0px_rgba(0,0,0,1)]">
+                    <span className="text-5xl font-bold text-white [text-shadow:3px_3px_0px_#000]">{plan.price} ₽</span>
                   </div>
                 </CardHeader>
-                <CardContent>
-                  <ul className="space-y-3">
+                <CardContent className="pt-6">
+                  <ul className="space-y-4">
                     {plan.features.map((feature, i) => (
-                      <li key={i} className="flex items-start gap-2">
-                        <Icon name="CheckCircle2" size={20} className="text-primary mt-1 shrink-0" />
-                        <span>{feature}</span>
+                      <li key={i} className="flex items-start gap-3">
+                        <div className="w-6 h-6 bg-green-400 border-2 border-black flex items-center justify-center shrink-0 mt-1">
+                          <Icon name="Check" size={16} className="text-black font-bold" />
+                        </div>
+                        <span className="font-semibold">{feature}</span>
                       </li>
                     ))}
                   </ul>
-                  <Button className={`w-full mt-6 ${plan.popular ? 'bg-primary hover:bg-primary/90' : 'bg-primary/80 hover:bg-primary'} shadow-lg`} size="lg">
-                    Выбрать пакет
+                  <Button className="w-full mt-8 bg-purple-600 hover:bg-purple-700 text-white border-4 border-black shadow-[6px_6px_0px_0px_rgba(0,0,0,1)] hover:shadow-[8px_8px_0px_0px_rgba(0,0,0,1)] py-6 text-lg font-bold uppercase">
+                    ВЫБРАТЬ!
                   </Button>
                 </CardContent>
               </Card>
@@ -224,30 +229,31 @@ const Index = () => {
         </div>
       </section>
 
-      <section id="portfolio" className="py-16 sm:py-20 md:py-24 px-4">
+      <section id="portfolio" className="py-16 sm:py-20 md:py-24 px-4 bg-gradient-to-b from-white to-yellow-50">
         <div className="container mx-auto">
-          <div className="text-center mb-12 sm:mb-16">
-            <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold mb-3 sm:mb-4">
-              <span className="text-primary">作品集</span> · Портфолио
-            </h2>
-            <div className="w-24 h-1 bg-primary mx-auto mb-4" />
-            <p className="text-muted-foreground text-base sm:text-lg">Примеры наших работ</p>
+          <div className="text-center mb-16">
+            <div className="inline-block bg-purple-600 border-4 border-black px-8 py-3 mb-4 transform rotate-1 shadow-[6px_6px_0px_0px_rgba(0,0,0,1)]">
+              <h2 className="text-4xl sm:text-5xl md:text-6xl font-bold text-white">ПОРТФОЛИО!</h2>
+            </div>
+            <p className="text-xl font-semibold mt-4 uppercase">📸 Примеры наших работ 📸</p>
           </div>
           
           <div className="grid md:grid-cols-3 gap-8 max-w-6xl mx-auto">
             {portfolio.map((item, index) => (
-              <Card key={index} className="overflow-hidden group hover:shadow-2xl transition-all duration-300 border-2 hover:border-primary bg-card">
-                <div className="relative overflow-hidden h-64 bg-primary/5">
+              <Card key={index} className="overflow-hidden group border-4 border-black bg-white shadow-[8px_8px_0px_0px_rgba(0,0,0,1)] hover:shadow-[12px_12px_0px_0px_rgba(0,0,0,1)] hover:scale-105 transition-all duration-300">
+                <div className="relative overflow-hidden h-64 border-b-4 border-black">
                   <img 
                     src={item.image} 
                     alt={item.brand}
-                    className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
+                    className="w-full h-full object-cover"
                   />
-                  <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent" />
+                  <div className="absolute top-4 right-4 bg-yellow-400 border-4 border-black px-4 py-2 shadow-[4px_4px_0px_0px_rgba(0,0,0,1)] transform rotate-6">
+                    <span className="font-bold uppercase text-sm">✓ СДЕЛАНО!</span>
+                  </div>
                 </div>
                 <CardHeader>
-                  <CardTitle className="text-xl text-primary">{item.brand}</CardTitle>
-                  <CardDescription className="text-base">{item.description}</CardDescription>
+                  <CardTitle className="text-2xl">{item.brand}</CardTitle>
+                  <CardDescription className="text-base font-semibold text-black">{item.description}</CardDescription>
                 </CardHeader>
               </Card>
             ))}
@@ -255,23 +261,22 @@ const Index = () => {
         </div>
       </section>
 
-      <section id="faq" className="py-16 sm:py-20 md:py-24 px-4 bg-muted/30">
+      <section id="faq" className="py-16 sm:py-20 md:py-24 px-4 bg-purple-50">
         <div className="container mx-auto max-w-4xl">
-          <div className="text-center mb-12 sm:mb-16">
-            <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold mb-3 sm:mb-4">
-              <span className="text-primary">常见问题</span> · Вопросы и ответы
-            </h2>
-            <div className="w-24 h-1 bg-primary mx-auto mb-4" />
-            <p className="text-muted-foreground text-base sm:text-lg">Ответы на частые вопросы</p>
+          <div className="text-center mb-16">
+            <div className="inline-block bg-yellow-400 border-4 border-black px-8 py-3 mb-4 transform -rotate-1 shadow-[6px_6px_0px_0px_rgba(0,0,0,1)]">
+              <h2 className="text-4xl sm:text-5xl md:text-6xl font-bold">ВОПРОСЫ!</h2>
+            </div>
+            <p className="text-xl font-semibold mt-4 uppercase">❓ Ответы на частые вопросы ❓</p>
           </div>
           
           <Accordion type="single" collapsible className="space-y-4">
             {faqs.map((faq, index) => (
-              <AccordionItem key={index} value={`item-${index}`} className="border-2 border-border rounded-xl px-6 bg-card shadow-sm hover:shadow-md transition-shadow">
-                <AccordionTrigger className="text-lg font-semibold hover:text-primary">
+              <AccordionItem key={index} value={`item-${index}`} className="border-4 border-black bg-white shadow-[6px_6px_0px_0px_rgba(0,0,0,1)] px-6">
+                <AccordionTrigger className="text-lg font-bold uppercase hover:text-purple-600">
                   {faq.question}
                 </AccordionTrigger>
-                <AccordionContent className="text-base text-muted-foreground">
+                <AccordionContent className="text-base font-medium pt-4">
                   {faq.answer}
                 </AccordionContent>
               </AccordionItem>
@@ -280,74 +285,73 @@ const Index = () => {
         </div>
       </section>
 
-      <section id="contacts" className="py-16 sm:py-20 md:py-24 px-4 relative">
-        <div className="absolute inset-0 bg-[radial-gradient(circle_at_70%_50%,rgba(220,38,38,0.05),transparent_50%)]" />
+      <section id="contacts" className="py-16 sm:py-20 md:py-24 px-4 bg-gradient-to-b from-white to-pink-50 relative">
+        <div className="absolute inset-0 bg-comic-dots opacity-20" />
         
         <div className="container mx-auto max-w-2xl relative z-10">
-          <div className="text-center mb-12 sm:mb-16">
-            <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold mb-3 sm:mb-4">
-              <span className="text-primary">联系我们</span> · Контакты
-            </h2>
-            <div className="w-24 h-1 bg-primary mx-auto mb-4" />
-            <p className="text-muted-foreground text-base sm:text-lg">Свяжитесь с нами удобным способом</p>
+          <div className="text-center mb-16">
+            <div className="inline-block bg-pink-500 border-4 border-black px-8 py-3 mb-4 transform rotate-1 shadow-[6px_6px_0px_0px_rgba(0,0,0,1)]">
+              <h2 className="text-4xl sm:text-5xl md:text-6xl font-bold text-white">КОНТАКТЫ!</h2>
+            </div>
+            <p className="text-xl font-semibold mt-4 uppercase">📞 Свяжитесь с нами! 📞</p>
           </div>
           
-          <Card className="border-2 shadow-xl bg-card">
+          <Card className="border-4 border-black shadow-[12px_12px_0px_0px_rgba(0,0,0,1)] bg-white">
             <CardHeader>
-              <CardTitle className="text-xl sm:text-2xl">Оставьте заявку</CardTitle>
-              <CardDescription className="text-sm sm:text-base">Мы перезвоним в течение 15 минут</CardDescription>
+              <CardTitle className="text-2xl uppercase">Оставьте заявку!</CardTitle>
+              <CardDescription className="text-base font-semibold text-black">⚡ Мы перезвоним в течение 15 минут ⚡</CardDescription>
             </CardHeader>
             <CardContent>
               <form onSubmit={handleSubmit} className="space-y-6">
                 <div>
-                  <label className="text-sm font-medium mb-2 block">Ваше имя</label>
+                  <label className="text-sm font-bold mb-2 block uppercase">Ваше имя</label>
                   <Input 
                     placeholder="Иван Иванов" 
                     value={formData.name}
                     onChange={(e) => setFormData({...formData, name: e.target.value})}
-                    className="h-12 border-2 focus:border-primary"
+                    className="h-12 border-4 border-black shadow-[4px_4px_0px_0px_rgba(0,0,0,1)] font-semibold"
                   />
                 </div>
                 <div>
-                  <label className="text-sm font-medium mb-2 block">Телефон</label>
+                  <label className="text-sm font-bold mb-2 block uppercase">Телефон</label>
                   <Input 
                     placeholder="+7 (999) 123-45-67" 
                     value={formData.phone}
                     onChange={(e) => setFormData({...formData, phone: e.target.value})}
-                    className="h-12 border-2 focus:border-primary"
+                    className="h-12 border-4 border-black shadow-[4px_4px_0px_0px_rgba(0,0,0,1)] font-semibold"
                   />
                 </div>
                 <div>
-                  <label className="text-sm font-medium mb-2 block">Сообщение</label>
+                  <label className="text-sm font-bold mb-2 block uppercase">Сообщение</label>
                   <Textarea 
                     placeholder="Модель автомобиля и какие услуги интересуют..."
                     value={formData.message}
                     onChange={(e) => setFormData({...formData, message: e.target.value})}
-                    className="min-h-32 border-2 focus:border-primary"
+                    className="min-h-32 border-4 border-black shadow-[4px_4px_0px_0px_rgba(0,0,0,1)] font-semibold"
                   />
                 </div>
-                <Button type="submit" size="lg" className="w-full bg-primary hover:bg-primary/90 shadow-lg">
-                  <Icon name="Send" className="mr-2" size={20} />
-                  Отправить заявку
+                <Button type="submit" size="lg" className="w-full bg-purple-600 hover:bg-purple-700 text-white border-4 border-black shadow-[6px_6px_0px_0px_rgba(0,0,0,1)] hover:shadow-[8px_8px_0px_0px_rgba(0,0,0,1)] py-7 text-xl font-bold uppercase">
+                  <Icon name="Send" className="mr-2" size={24} />
+                  ОТПРАВИТЬ!
                 </Button>
               </form>
 
-              <div className="mt-6 sm:mt-8 pt-6 sm:pt-8 border-t space-y-3 sm:space-y-4">
-                <div className="flex items-center gap-3 text-base sm:text-lg">
-                  <div className="w-10 h-10 rounded-full bg-primary/10 flex items-center justify-center shrink-0">
-                    <Icon name="Phone" className="text-primary" size={20} />
+              <div className="mt-8 pt-8 border-t-4 border-black space-y-4">
+                <div className="flex items-center gap-4 text-lg font-semibold">
+                  <div className="w-12 h-12 bg-purple-500 border-4 border-black flex items-center justify-center shrink-0 shadow-[4px_4px_0px_0px_rgba(0,0,0,1)]">
+                    <Icon name="Phone" className="text-white" size={24} />
                   </div>
-                  <a href="tel:+79991234567" className="hover:text-primary transition-colors break-all">+7 (999) 123-45-67</a>
+                  <a href="tel:+79991234567" className="hover:text-purple-600 transition-colors">+7 (999) 123-45-67</a>
                 </div>
-                <div className="flex items-center gap-3 text-base sm:text-lg">
-                  <div className="w-10 h-10 rounded-full bg-primary/10 flex items-center justify-center shrink-0">
-                    <Icon name="Mail" className="text-primary" size={20} />
+                <div className="flex items-center gap-4 text-lg font-semibold">
+                  <div className="w-12 h-12 bg-pink-500 border-4 border-black flex items-center justify-center shrink-0 shadow-[4px_4px_0px_0px_rgba(0,0,0,1)]">
+                    <Icon name="Mail" className="text-white" size={24} />
                   </div>
-                  <a href="mailto:info@rusauto.ru" className="hover:text-primary transition-colors break-all">info@rusauto.ru</a>
+                  <a href="mailto:info@rusauto.ru" className="hover:text-purple-600 transition-colors break-all">info@rusauto.ru</a>
                 </div>
-                <div className="flex items-center gap-3 text-base sm:text-lg">
-                  <div className="w-10 h-10 rounded-full bg-primary/10 flex items-center justify-center shrink-0">
-                    <Icon name="MapPin" className="text-primary" size={20} />
+                <div className="flex items-center gap-4 text-lg font-semibold">
+                  <div className="w-12 h-12 bg-yellow-400 border-4 border-black flex items-center justify-center shrink-0 shadow-[4px_4px_0px_0px_rgba(0,0,0,1)]">
+                    <Icon name="MapPin" className="text-black" size={24} />
                   </div>
                   <span>Москва, ул. Примерная, д. 123</span>
                 </div>
@@ -357,12 +361,12 @@ const Index = () => {
         </div>
       </section>
 
-      <footer className="py-8 sm:py-12 px-4 bg-foreground/5 border-t-2 border-primary/20">
+      <footer className="py-12 px-4 bg-black border-t-4 border-black">
         <div className="container mx-auto text-center">
-          <div className="mb-4">
-            <p className="text-2xl font-bold text-primary">中俄汽车服务</p>
+          <div className="inline-block bg-yellow-400 border-4 border-white px-8 py-3 mb-6 shadow-[6px_6px_0px_0px_rgba(255,255,255,1)]">
+            <p className="text-2xl font-bold uppercase">⚡ РУСИФИКАЦИЯ АВТО ⚡</p>
           </div>
-          <p className="text-sm sm:text-base text-muted-foreground">© 2024 Русификация китайских авто. Все права защищены.</p>
+          <p className="text-white text-sm font-semibold uppercase">© 2024 Все права защищены</p>
         </div>
       </footer>
     </div>
