@@ -111,3 +111,37 @@
     font-family: "Montserrat", sans-serif;
   }
 }
+
+@keyframes float {
+  0%,
+  100% {
+    transform: translateY(0px) translateX(0px);
+  }
+  33% {
+    transform: translateY(-20px) translateX(10px);
+  }
+  66% {
+    transform: translateY(-10px) translateX(-10px);
+  }
+}
+
+@keyframes float-reverse {
+  0%,
+  100% {
+    transform: translateY(0px) translateX(0px) rotate(12deg);
+  }
+  33% {
+    transform: translateY(15px) translateX(-15px) rotate(12deg);
+  }
+  66% {
+    transform: translateY(25px) translateX(10px) rotate(12deg);
+  }
+}
+
+.animate-float {
+  animation: float 15s ease-in-out infinite;
+}
+
+.animate-float-reverse {
+  animation: float-reverse 18s ease-in-out infinite;
+}

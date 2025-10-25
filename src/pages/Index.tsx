@@ -110,14 +110,20 @@ const Index = () => {
         <div className="absolute inset-0 bg-gradient-to-br from-primary/20 via-secondary/20 to-accent/20 animate-fade-in" />
         <div className="absolute inset-0 bg-[radial-gradient(circle_at_50%_50%,rgba(139,92,246,0.1),transparent_50%)]" />
         
-        <div className="absolute top-20 -left-20 w-96 h-96 opacity-5 animate-fade-in">
+        <div className="absolute top-20 -left-20 w-96 h-96 opacity-5 animate-float">
           <img src="https://cdn.poehali.dev/projects/93c9751f-a690-4b36-86a7-2a14a0999ac6/files/f4dae364-8ff1-48f1-a247-9ef552f11c46.jpg" alt="" className="w-full h-full object-contain" />
         </div>
-        <div className="absolute bottom-32 -right-32 w-[500px] h-96 opacity-5 animate-fade-in" style={{ animationDelay: '0.3s' }}>
+        <div className="absolute bottom-32 -right-32 w-[500px] h-96 opacity-5 animate-float" style={{ animationDelay: '5s' }}>
           <img src="https://cdn.poehali.dev/projects/93c9751f-a690-4b36-86a7-2a14a0999ac6/files/f9321ebe-daec-498f-91fc-9f2d05684536.jpg" alt="" className="w-full h-full object-contain" />
         </div>
-        <div className="absolute top-1/3 right-1/4 w-80 h-80 opacity-5 animate-fade-in" style={{ animationDelay: '0.6s' }}>
+        <div className="absolute top-1/3 right-1/4 w-80 h-80 opacity-5 animate-float-reverse">
           <img src="https://cdn.poehali.dev/projects/93c9751f-a690-4b36-86a7-2a14a0999ac6/files/f4dae364-8ff1-48f1-a247-9ef552f11c46.jpg" alt="" className="w-full h-full object-contain rotate-12" />
+        </div>
+        <div className="absolute top-1/4 left-1/3 w-72 h-72 opacity-5 animate-float" style={{ animationDelay: '7s' }}>
+          <img src="https://cdn.poehali.dev/projects/93c9751f-a690-4b36-86a7-2a14a0999ac6/files/adf742fa-37a7-42dc-94dd-ce73f96cecfd.jpg" alt="" className="w-full h-full object-contain -rotate-6" />
+        </div>
+        <div className="absolute bottom-1/4 left-10 w-64 h-64 opacity-5 animate-float-reverse" style={{ animationDelay: '3s' }}>
+          <img src="https://cdn.poehali.dev/projects/93c9751f-a690-4b36-86a7-2a14a0999ac6/files/08b43e6e-6343-448b-af1a-326a0765c969.jpg" alt="" className="w-full h-full object-contain" />
         </div>
         
         <div className="container mx-auto px-4 relative z-10">
